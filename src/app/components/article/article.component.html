@@ -1,0 +1,18 @@
+<div style='display: flex;justify-content: center;'>
+  <h1 style="font-weight: bold;font-style: italic;margin-right:1%">Article List</h1>
+  <button mat-raised-button (click)="openDialog()" color="primary">Add</button>
+</div>
+
+<div class='card-list'>
+  <mat-card class="card" *ngFor='let article of articles'>
+    <img mat-card-image src="{{article.image}}" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>{{article.detail}}</p>
+    </mat-card-content>
+    <mat-card-actions class='actions'>
+      <button mat-button (click)="updateDetail(article)" color='primary'>Update Detail</button>
+      <button mat-button (click)="updateImage()" color='warn'>Update Image</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+  

@@ -1,0 +1,15 @@
+.card-list{
+    display: flex;
+    margin: 2%;
+    flex-wrap: wrap;
+    .card{
+        margin:2%;
+        width:225px;
+        height:auto;
+        .actions{
+            button{
+                margin:0 0px;
+            }
+        }
+    }
+}
